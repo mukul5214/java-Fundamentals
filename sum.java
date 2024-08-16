@@ -10,5 +10,6 @@ public class sum {
             sum = sum + i;
         }
         System.out.println("the sum of n natural numbers are: "+sum);
+        sh.close();
     }
 }

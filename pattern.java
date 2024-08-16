@@ -8,5 +8,6 @@ public class pattern{
         for (int i=1;i<=n;i++){
 
         }
+        sc.close();
     }
 }

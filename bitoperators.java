@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 public class bitoperators {
     public static void main(String[] agrs){

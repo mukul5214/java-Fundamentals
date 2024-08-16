@@ -19,5 +19,6 @@ public class conditions{
                System.out.println("a is lesser than b");
            }
         }
+        sc.close();
     }
 }
