@@ -1,5 +1,6 @@
 package recursions;
 
+// to find sum of digits in given interger.
 import java.util.*;
 
 public class recursions_3 {
@@ -7,6 +8,7 @@ public class recursions_3 {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         System.out.println(sum(x));
+        sc.close();
     }
 
     public static int sum(int n){
