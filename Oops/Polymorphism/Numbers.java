@@ -19,7 +19,7 @@ public class Numbers {
         //above he 2 methods with name with different arguments is called
         //So the result also differs according to what type of method is called.
         //same method but acts differently.
-        
+
     }
 }
 
