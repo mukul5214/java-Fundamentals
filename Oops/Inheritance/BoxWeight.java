@@ -4,7 +4,7 @@ public class BoxWeight extends Box {
     double weight;
     double price;
     BoxWeight(){
-        this.weight= 1;
+        this.weight= 2;
     }
     BoxWeight(double length , double height , double width, double weight){
         super(length,height,width);
@@ -25,4 +25,11 @@ public class BoxWeight extends Box {
     //present in Box class(PARENT), IF WE WANT TO ACCESS THE WEIGHT IN PARENT CLASS WE USE
     // super.weight , its gives the weight variable of parent(Box)
     // this.weight , it gives weight the weight variable of current class which is child class.
+
+    void print(){
+        System.out.println(super.weight);
+    }
+    // the super keyword can be used to access the shadowed variable of parent class instance variables
+    // by the child class instance variable which has same name.
+    //But we can the super.member only in subclass and not in any other class.
 }

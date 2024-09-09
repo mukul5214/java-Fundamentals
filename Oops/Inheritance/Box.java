@@ -4,11 +4,13 @@ public class Box {
     double length;
     double height;
     double width;
+    double weight;
 
     Box(){
         this.length= 1;
         this.height= 1;
         this.width =1;
+        this.weight= 1;
     }
     //for cube
     Box(int a){
