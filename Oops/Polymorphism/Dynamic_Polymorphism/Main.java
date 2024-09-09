@@ -12,7 +12,7 @@ public class Main {
 
         obj3.area();
         //Here the object is Circle type so even if area() method is defined with same name and return
-        // type in there respective classes the area() method of Circle class overrides the area() of the
+        // type in there respective classes. the area() method of Circle class overrides the area() of the
         // parent class Shapes.
 
         obj4.area();
