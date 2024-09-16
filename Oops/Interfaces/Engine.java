@@ -3,7 +3,11 @@ package Oops.Interfaces;
 import java.util.AbstractSequentialList;
 
 public interface Engine {
-    abstract void start();
-    abstract void stop();
-    abstract void acc();
+    void start();
+
+    void stop();
+
+    void acc();
 }
+
+//THE METHODS IN INTERFACES ARE STATIC AND ABSTRACT BY DEFAULT

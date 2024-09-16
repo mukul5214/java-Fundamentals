@@ -1,11 +1,8 @@
 package Oops.Interfaces;
 
-public class Car implements Engine,Brakes,Media_Player {
+public class Car implements Engine,Media_Player {
 
-    @Override
-    public void Brake() {
-        System.out.println("Normal brake");
-    }
+
 
     @Override
     public void start() {
