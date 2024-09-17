@@ -1,22 +1,26 @@
 package Oops.Interfaces;
 
+
+import Oops.carBrakes;
+
 public class MyCar {
-    private Engine MyEngine;
-    private Media_Player CD_Player;
+    final private Engine MyEngine;
+    final private Media_Player CD_Player;
+    final private Brakes hydoBrakes;
 
-    void MyEngine(){
+    public MyCar() {
         MyEngine = new PowerEngine();
+        CD_Player = new Media();
+        hydoBrakes = new carBrakes();
     }
 
-    void CD_Player(){
-        CD_Player = new Media();
-    }
+
     void start(){
         MyEngine.start();
     }
 
     void stop(){
-        this.Engine.stop();
+        MyEngine.stop();
     }
 
     void StartCD_player(){
@@ -25,5 +29,13 @@ public class MyCar {
 
     void StopCD(){
         CD_Player.stop();
+    }
+
+    void brake(){
+        hydoBrakes.start();
+    }
+
+    void releaseBrakes(){
+        hydoBrakes.stop();
     }
 }
