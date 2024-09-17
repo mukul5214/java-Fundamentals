@@ -4,7 +4,7 @@ package Oops.Interfaces;
 import Oops.carBrakes;
 
 public class MyCar {
-    final private Engine MyEngine;
+    private Engine MyEngine;
     final private Media_Player CD_Player;
     final private Brakes hydoBrakes;
 
@@ -37,5 +37,9 @@ public class MyCar {
 
     void releaseBrakes(){
         hydoBrakes.stop();
+    }
+
+    void upgrade_engine(){
+        this.MyEngine = new ElectricEngine();
     }
 }

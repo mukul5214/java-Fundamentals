@@ -5,9 +5,14 @@ public class Main{
         MyCar car1 = new MyCar();
         car1.start();
         car1.stop();
+        
         car1.StartCD_player();
         car1.StopCD();
+
         car1.brake();
         car1.releaseBrakes();
+
+        car1.upgrade_engine();
+        car1.start();
     }
 }
