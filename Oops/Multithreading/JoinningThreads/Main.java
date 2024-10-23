@@ -12,6 +12,10 @@ public class Main {
             t2.join();  // Main thread waits for t2 to finish
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }// Join ensures that main thread is finished only when t1 and t2 are finished
+        System.out.println("Main thread exit");
+        for(int i = 0 ; i < 8 ; i++){
+            System.out.println(i);
         }
 
 
