@@ -4,51 +4,36 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-class Outter implements ActionListener {
+class Outter implements ActionListener{
     Event2 obj;
-
-    Outter(Event2 e) {
-        this.obj = e; // Storing reference to Event2 instance
+    Outter(Event2 e){
+        this.obj = e;
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // Setting the text in the TextField when the button is clicked
-        obj.tf.setText("Welcome");
+        obj.tf.setText("welcome");
     }
 }
-
 public class Event2 extends Frame {
     TextField tf;
-
-    Event2() {
-        // Initialize TextField with initial text "hi"
-        tf = new TextField("hi");
-        tf.setBounds(60, 50, 170, 20);
-
-        // Initialize Button
-        Button b = new Button("Click Me");
-        b.setBounds(100, 120, 80, 30);
-
-        // Registering Outter as the ActionListener for the button
+    Event2(){
+        tf = new TextField("hello");
+        tf.setBounds(40,130,40,12);
+        Button b = new Button("click");
+        b.setBounds(60,160,20,40);
         Outter obj = new Outter(this);
-        b.addActionListener(obj);  // Register the listener
+        b.addActionListener(obj);
 
-        // Add the button and text field to the frame
-        add(tf);
         add(b);
-
-        // Set up the frame
-        setSize(300, 300);
-        setLayout(null); // Use null layout to position components manually
+        add(tf);
+        setSize(350,350);
+        setLayout(null);
         setVisible(true);
+
     }
 
     public static void main(String[] args) {
-        new Event2(); // Create the Event2 object which will set up the GUI
+        Event2 e = new Event2();
     }
 }
